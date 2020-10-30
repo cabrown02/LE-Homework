@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+			The Play Kits | Montessori-Based Toy Subscription Boxes by Lovevery
+	</title>
+	<!-- Font Awesome -->
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"> -->
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="./css/styles.css">
+	
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" type="text/css" href="./plugins/slick/slick.css"/>
+	<!-- Add the new slick-theme.css if you want the default styling -->
+	<link rel="stylesheet" type="text/css" href="./plugins/slick/slick-theme.css"/>
+
+</head>
+<body>
+	<!--   NAVIGATION START -->
+	<header class='nav-wrapper'>
+
+		<!-- Mobile Navigation -->
+		<div class="navbar-mobile">
+			<div class='navbar-mobile-wrapper'>
+			  <div class='navbar-mobile-left'><a href="#" class='burger'><i class='fa fa-bars'></i></a></div>
+			  <div class='navbar-mobile-center'><a class='yellow-logo' href="#" aria-label="home page" ></a></div>
+			  <div class='navbar-mobile-right'><div class='cart-counter'>0</div></div>
+			</div>
+			<div class='navbar-mobile-menu hidden'>
+				<ul>
+					<li><a href="#">The Play Kits</a></li>
+					<li><a href="#">The Play Gym</a></li>
+					<li><a href="#">The Block Set</a></li>
+					<li><a href="#">Shop<i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></a></li>
+					<li><a href="#">Gifting</a></li>
+					<li><a href="#">Registry</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!-- Tablet and Up Navbar -->
+		<div class='navbar'>
+			<div class='navbar-left'>
+				<ul class='nav-list'>
+					<!-- TODO: add nav-open and nav-close classes for chevrons -->
+				<li><a href="#">Shop<i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></a></li>
+				<li><a href="#">About Us<i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+			<div class='navbar-center'><a class='green-logo' href="#" aria-label="home page" ></a></div>
+			<div class='navbar-right'>
+				<ul class='nav-list'>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Sign In</a></li>
+				<li class='nav-item pr-0'><a href="#">Cart</a></li>
+				<div class='cart-counter'>0</div>
+				</ul>
+				
+			</div>
+		</div>
+	</header>
+
+	<!-- BREADCRUMBS -->
+	<div class='breadcrumb-wrapper'>
+		<ul class="breadcrumb">
+			<li><a href="#" class='strong-text'>Home</a></li>
+			<li><a href="#" class='strong-text'>Play Kits</a></li>
+			<li><a href="#" id='dynamic-breadcrumb'>dynamic title</a></li>
+		</ul>
+	</div>
+
+  <!-- BEGIN CONTENT -->
+  <div id='content-wrapper'>
+		<!-- LEFT HAND SIDE CONTAINS PHOTOS -->
+		<div class='slider-wrapper'>
+			<div class="slider">
+				<div><img class='product-img-one' src="./images/Lifestyle/K1.Lifestyle.jpg" alt="baby looking at card holder"></div>
+				<div><img class='product-img-two' src="./images/Lifestyle/K2.Lifestyle.jpg" alt="baby looking at card holder"></div>
+				<div><img class='product-img-three' src="./images/Lifestyle/K3.Lifestyle.jpg" alt="baby looking at card holder"></div>
+				<div><img class='product-img-four' src="./images/Lifestyle/K4.Lifestyle.jpg" alt="baby looking at card holder"></div>
+				<div><img class='product-img-five' src="./images/Lifestyle/K5.Lifestyle.jpg" alt="baby looking at card holder"></div>
+			</div>
+			<div class="slider-nav">
+				<div class='item'><img class='product-img-one' src="./images/Lifestyle/K1.Lifestyle.jpg" alt="baby looking at card holder"></div>
+				<div class='item'><img class='product-img-two' src="./images/Lifestyle/K2.Lifestyle.jpg" alt="baby looking at card holder"></div>
+				<div class='item'><img class='product-img-three' src="./images/Lifestyle/K3.Lifestyle.jpg" alt="baby looking at card holder"></div>
+				<div class='item'><img class='product-img-four' src="./images/Lifestyle/K4.Lifestyle.jpg" alt="baby looking at card holder"></div>
+				<div class='item'><img class='product-img-five' src="./images/Lifestyle/K5.Lifestyle.jpg" alt="baby looking at card holder"></div>
+			</div>
+		</div>
+
+<!-- RIGHT HAND SIDE CONTAINS INFO AND INPUTS -->
+
+			<!-- Product Information -->
+			<div id='product-info-wrapper'>
+				<div id='product-title'>
+					<h4 id='dynamic-title'>Dynamic Title</h4>
+				</div>
+
+				<!-- Product Specs -->
+				<div id='ratings-wrapper'>
+					<div>
+						<!-- TODO:  -->
+						<fieldset class="rating">
+							<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+							<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+							<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+							<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+							<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+							<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+							<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+							<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+							<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+							<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+						</fieldset>
+					</div>
+
+					<div>
+						<span class='reviews'>20 reviews</span>
+					</div>
+
+					<hr class='vr'>
+
+					<div id='dynamic-age' class='small-txt'>dynamic age</div>
+
+					<hr class='vr'>
+
+					<div class='small-txt'>Part of: <a href='#' class='plain'>Play Kit Subscription</a></div>
+				</div>
+
+
+				<hr/>
+
+				
+				<!-- Product Description -->
+				<p id='dynamic-description' class='small-txt'>Dynamic text which describes the toys. Morbi in vehicula felis, fringilla lacinia risus. Sed tincidunt congue magna et tempor. Proin nibh risus, hendrerit et cursus sit amet, dapibus a felis. In nec neque non nisl gravida volutpat ultrices in tortor. Vivamus vel scelerisque erat. Maecenas aliquam luctus nulla, vel lacinia leo lacinia nec. Ut lobortis pharetra dui quis placerat. Proin vitae scelerisque dolor. Aenean congue urna urna, ut sollicitudin velit iaculis at. Suspendisse facilisis ipsum in condimentum pulvinar. Donec blandit, lacus sit amet tempus scelerisque, ante eros tempus diam, et molestie metus elit quis velit. Vivamus ac erat ut nulla consequat euismod.</p>
+				<p class='small-txt bold'>$80/kit, only available in the Play Kit subscription</p>
+				<form id='customer-data'>
+					<div class='form-wrapper'>
+						<label class='small-txt black' for="name">Your childs' name (optional)</label>
+						<input type="text" name='name' id='child-name'>
+					</div>
+					<div class='form-wrapper'>
+						<label class='small-txt black' for="birth-date">Birth date/due date</label>
+						<input type="date" id='birth-date'>
+					</div>
+					<div class='form-wrapper'>
+						<a href="#" class=" small-txt bold btn">Subscribe now</a>
+					</div>
+				</form>
+			</div><!--END PRODUCT INFO WRAPPER-->
+	</div><!--END CONTENT WRAPPER-->
+	
+	<!--jQuery 3.x-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Slick Carousel -->
+	<script type="text/javascript" src="./plugins/slick/slick.min.js"></script>
+	<script type="text/javascript" src="./js/photo-carousel.js"></script>
+	<script type="text/javascript" src="./js/responsive-nav.js"></script>
+	<script type="text/javascript" src="./js/content-loader.js"></script>
+</body>
+</html>

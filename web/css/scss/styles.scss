@@ -1,0 +1,161 @@
+//
+// Import Navigation //
+//
+@import "navigation";
+
+//
+// Import Helper Classes //
+//
+@import "helpers";
+
+//
+// Import Breadcrumbs //
+//
+@import "breadcrumbs";
+
+//
+// Import ratings //
+//
+@import "ratings";
+
+//
+// Import mixins //
+//
+@import "mixins";
+
+//
+// Import variables //
+//
+@import "colors";
+
+//
+// Import font awesome //
+//
+@import "font-awesome";
+
+
+// GENERAL
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	color: $color-theme-gunmetal;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+// CONTENT
+
+#content-wrapper {
+	display: flex;
+	width: 85%;
+	margin: 0 auto;
+
+	@include breakpoint-less(lg) {
+		flex-direction: column-reverse;
+		justify-content: center;
+	  }
+}
+
+// PRODUCT IMAGES
+//
+// Photo Carousel
+
+.slider-wrapper {
+	width: 35%;
+	
+	@include breakpoint-less(lg) {
+		width: 100%;
+	  }
+}
+
+.slider{
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+img{
+	width: auto;
+	height: 100%;
+}
+.slider-nav{
+	width: 250px;
+	height: 85px;
+	margin: 0 auto;
+
+	.item {
+		width: 40px;
+		height: 40px;
+		overflow: hidden;
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+	img {
+		height: 100%;
+		width: auto;
+	}
+}
+.slider-nav .slick-track{
+	margin-top: 20px;
+	height: 60px;
+}
+
+.slick-prev:before, .slick-next:before { 
+	color: $color-theme-lightgray !important;
+}
+
+
+// PRODUCT INFORMATION
+
+#product-info-wrapper {
+	padding: 0 15px;
+
+	@include breakpoint-less(lg) {
+		padding: 0;
+	}
+}
+
+form {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	@include breakpoint-less(lg) {
+		flex-direction: column;
+	}
+
+	.form-wrapper {
+		width: 30%;
+		height: 56px;
+		display: flex;
+		flex-direction: column;
+
+		@include breakpoint-less(lg) {
+			width: 100%;
+		}
+	}
+
+	input {
+		padding: 6px 10px;
+		width: 80%;
+		height: 36px;
+
+		@include breakpoint-less(lg) {
+			width: 100%;
+		}
+	}
+}
+
+.btn {
+	text-align: center;
+	color: $color-theme-white;
+	background-color: $color-theme-green;
+	border: 1px solid $color-theme-green;
+	font-size: 12px;
+	line-height: 24px;
+	text-decoration: none;
+	padding: 10px 16px;
+	margin-top: 10px;
+}
